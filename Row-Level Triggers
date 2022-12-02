@@ -1,0 +1,7 @@
+create or replace trigger T1_Row_level_example
+before update —Before updating the employee table
+on Employee
+for each row
+begin
+DBMS_OUTPUT.PUT_LINE(‘Row Level trigger executed’);
+end;
